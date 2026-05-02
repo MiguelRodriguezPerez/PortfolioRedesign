@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@forward './app/shared/styles/colors';
+@forward './app/shared/styles/fonts';
+@forward './app/shared/styles/generalRules.scss';
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: var(--font-size);
+}

@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+li {
+  color: var(--secondary-font-color);
+  font-size: var(--sm-font-size);
+}
+
+li:hover {
+  color: #CB6411;
+}
