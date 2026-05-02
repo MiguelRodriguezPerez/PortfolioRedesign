@@ -1,0 +1,22 @@
+:host {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: solid 1px var(--border-color);
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: var(--background-color);
+}
+
+span {
+  font-size: var(--sm-font-size);
+}
+
+span:first-of-type {
+  color: var(--cyan-color);
+}
+
+span:last-of-type {
+  color: oklch(79.2% .209 151.711);
+}
