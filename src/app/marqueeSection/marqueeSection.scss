@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ul.marquee-track {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  animation: marquee 26s linear infinite;
+
+  padding: 15px 0px;
+  background-color: #0D1B2A;
+}
+
+ul.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+li.marquee-item {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+li.marquee-item span {
+  font-size: 0.98rem;
+  font-family: var(--secondary-font-family);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
