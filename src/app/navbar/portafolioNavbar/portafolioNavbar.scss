@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 20px 12px;
+  border-bottom: solid 1px var(--border-color);
+}

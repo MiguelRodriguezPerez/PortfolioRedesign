@@ -1,0 +1,20 @@
+:host {
+  display: block;
+  height: calc(100dvh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('../../../public/images/pattern-code.png');
+  background-repeat: repeat;
+  background-color: rgba(15, 15, 26, 0.712);
+  background-blend-mode: darken;
+}
+
+section {
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}

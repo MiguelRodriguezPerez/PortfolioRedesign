@@ -1,0 +1,13 @@
+$dm-background-color: #0F0F1A;
+$dm-orange-color: #ff8b47;
+$dm-darker-orange-color:#CB6411;
+$dm-cyan-color: #38eeff;
+$dm-border-color: #2F385B;
+
+:root {
+    --background-color: #{$dm-background-color};
+    --orange-color: #{$dm-orange-color};
+    --darker-orange-color: #{$dm-darker-orange-color};
+    --cyan-color: #{$dm-cyan-color};
+    --border-color: #{$dm-border-color};
+}

@@ -1,0 +1,50 @@
+<style>
+.scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+}
+.dot-wrap {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1D9E75;
+  position: absolute;
+  animation: blink 2.4s ease-in-out infinite;
+}
+.glow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1D9E75;
+  position: absolute;
+  opacity: 0;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes blink {
+  0%, 100%   { opacity: 1; }
+  48%        { opacity: 1; }
+  50%        { opacity: 0.35; }
+  52%        { opacity: 1; }
+}
+@keyframes pulse {
+  0%         { transform: scale(1);   opacity: 0; box-shadow: 0 0 0   0px #1D9E75; }
+  48%        { transform: scale(1);   opacity: 0; box-shadow: 0 0 0   0px #1D9E75; }
+  50%        { transform: scale(1);   opacity: 1; box-shadow: 0 0 2px 2px #1D9E75; }
+  70%        { transform: scale(2); opacity: 0; box-shadow: 0 0 8px 6px transparent; }
+  100%       { transform: scale(2); opacity: 0; box-shadow: 0 0 0   0px transparent; }
+}
+</style>
+
+<div class="scene">
+  <div class="dot-wrap">
+    <div class="glow"></div>
+    <div class="dot"></div>
+  </div>
+</div>
