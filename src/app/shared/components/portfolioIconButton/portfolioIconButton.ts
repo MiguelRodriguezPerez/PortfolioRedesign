@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './portfolioIconButton.html',
   styleUrl: './portfolioIconButton.scss',
 })
-export class PortfolioIconButton { }
+export class PortfolioIconButton { 
+  
+}

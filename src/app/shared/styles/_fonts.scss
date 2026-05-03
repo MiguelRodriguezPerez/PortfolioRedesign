@@ -7,12 +7,20 @@ $font-family: sans-serif;
 $pc-font-size: 20px;
 $sm-font-size: 16px;
 
+@font-face{
+  src: url('../assets/static/Geist-Medium.ttf');
+  font-family: 'Geist-Medium';
+}
+
+
 :root {
   --font-color: #{$dm-gray-font-color};
   --font-size: #{$pc-font-size};
   --font-family: #{$font-family};
+  --secondary-font-family: 'Geist-Medium';
   --secondary-font-color: #{$dm-white-font-color};
 
   --sm-font-size: #{$sm-font-size};
 }
+
 

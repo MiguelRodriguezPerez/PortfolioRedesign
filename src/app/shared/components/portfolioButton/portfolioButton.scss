@@ -1,3 +1,30 @@
 :host {
   display: block;
+  width: fit-content;
 }
+
+:host.orange > button {
+  background-color: var(--orange-color);
+  border: solid 1px var(--orange-color);
+}
+
+:host.black > button {
+  background-color: var(--background-color);
+  border: solid 1px var(--border-color);
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  font-size: 18px;
+  color: var(--secondary-font-color);
+}
+
+
